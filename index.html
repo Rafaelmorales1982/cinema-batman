@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles.css">
+    <title>Cinema Cineaston</title>
+</head>
+
+<body>
+
+    <!-- 1° -- Cabeçalho-->
+    <header>
+        <img id="logo" src="./img/fundos-do-batman.jpg" alt="Logo do Batman"/>
+        <!--Criando nossa navegação-->
+        <nav>
+            <!--Criando nossa lista não ordenada-->
+            <ul>
+                <a href="./index.html">
+                    <li>Home</li>
+                </a>
+
+                <a href="./contato.html">
+                    <li>Contato</li>
+                </a>
+
+                <a href="./fotos.html">
+                    <li>Fotos</li>
+                </a>
+
+                <a href="./localizacao.html">
+                    <li>Localização</li>
+                </a>
+
+            </ul>
+
+        </nav>
+    </header>
+<!-------------------------------------------------------------------------------->
+
+<!--------2°--Banner do Batman----------------------------------------------------->
+<div id="banner"></div>
+<!-------------------------------------------------------------------------------->
+
+<!-----3° trailer ----------->
+<div id="trailer-container">
+
+    <div class="content">
+        <video controls class="trailer">
+            <source src="./videos/The Batman - DC FanDome Teaser.mp4" type="video/mp4">
+            Seu navegador não possui suporte para vídeos
+        </video>
+         <!--Div descrição  do Trailer-->
+        <div id="sinopse"><!--relato breve do filme-->
+            <p class="description">
+                Após dois anos espreitando as ruas como Batman, Bruce Wayne se 
+                encontra nas profundezas mais sombrias de Gotham City. Com 
+                aliados confiáveis, o vigilante solitário 
+                se estabelece como a personificação da vingança para a população.
+            </p>
+            <!--Botão ir para página para comprar ingresso-->
+            <button class="button">Comprar ingresso</button>
+        </div>
+
+    </div>
+
+</div>
+<!-------------------------------------------------------------------------------->
+
+<!--Parte 4 cards dos atores-->
+<!--DIV principal  que engloba todos os card-->
+<div class="actor-cards-container">
+    <!--DIV dos cards-->
+    <div class="cards-content">
+        <!--Duas classes card -> reponsável para estilizar os cards-->
+        <!--classe banner responsável pela a imagem -->
+        <!--1° card    2° banner  3° cards-content  4°actor-cards-container -->
+        <div class="card banner-1 "><span class="texto">Robert Pattison - Batman</span></div>
+        <div class="card banner-2 "><span class="texto">Zoe Kravitz - Mulher gato</span></div>
+        <div class="card banner-3 "><span class="texto">Jeffrey Wright - Gordon</span></div>
+
+    </div>
+</div>
+
+
+</body>
+
+</html>

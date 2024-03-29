@@ -1,0 +1,228 @@
+@import url('https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&display=swap');
+
+/*Criando um reset para a página*/
+
+*{
+    margin: 0;
+    padding: 0;
+    background-color: black;/*Toda página cor preto*/
+    list-style: none;/*tira a o estilo da  lista por padrão (as bolinhas)*/
+    text-decoration: none;/* Remove qualquer decoração do texto (link)
+                             remove uma linha embaixo do texto */
+    font-family: "Kdam Thmor Pro", sans-serif;/*fonte que vai usar esse elemento*/
+
+}
+
+/*----------------------------Parte 1 header------------------------------*/
+
+
+
+/*header é um container - utilizando as propriedades
+ para das um comportamento dentro desse container*/
+header {
+    height: 90px;/*altura*/
+    display: flex;/*coloca a imagem e os elementos filhos lado a lado,ou seja, 
+                    serão organizados em uma linha horizontal*/
+    justify-content: space-around;/* cria um espaçamento igual 
+                                    ao redor de cada item*/
+    align-items:center;/* alinha os itens verticalmente ao centro do container*/
+
+}
+
+nav {
+    width: 60%;/*largura da nav*/
+}
+
+ul{
+    display: flex;/*organiza os items em uma linha*/
+    width: 100%;/*largura*/
+    justify-content: space-between;/* espaço entre eles no final e no começo*/
+}
+
+li{
+    color: aliceblue;/*cor do texto dos itens da lista */
+    cursor: pointer;/*cria um cursor ao passar mouse*/
+    font-size: 19px;
+    transition: .5s;/*transição de cor*/
+    font-family: "Kdam Thmor Pro", sans-serif;/*fonte que vai usar esse elemento*/
+
+}
+
+/*pseudo classe é usada para
+estilizar um elemento quando o cursor do mouse está sobre ele*/
+li:hover {
+    color: #d21617; /*muda a cor do texto quando estiver com o mouse sobre*/
+    
+}
+
+/*pegando id do logo do batman*/
+#logo {
+    width: 150px; /*largura da imagem*/
+    height: auto;   /*para que a altura se adapte automaticamente à largura*/
+}
+
+/*-----------------------Header finalizado---------------------------------*/
+
+/*--------------------------Parte 2 Banner---------------------------------*/
+
+#banner {
+    width: 100%;
+    height: 400px;
+    background-image: url('./img/banner1-batman.jpg');
+    background-size: cover;
+    background-position: 50% 60%;
+  
+
+}
+
+/*------------Banner finalizado -------------------*/
+
+/*-----------Parte 3 estilizar trailer------------*/
+
+
+
+
+.trailer {
+    width: 50%;/*largura do vídeo*/
+}
+
+#trailer-container {
+    width: 100%;/*largura do container*/
+    height: 400px;/*altura do container*/
+    display: flex;/*serve para colocar os elemento lado a lado 
+    mas nesse momento utilizado para alinhar o itens com justify-content*/
+    justify-content: center;/*alinhar os lementos ao centro*/
+
+}
+
+.content {
+    width: 60%;/*deixando o nosso container com total de 60%*/
+    display: flex;/*colocando os elementos lado a lado*/
+    align-items: center;/*colocando  os elementos no centro verticalmente*/
+    justify-content: space-between;/*espaçamento entre os elementos*/
+    
+}
+
+#sinopse {
+    width: 50%;
+    display: flex;/*nesse caso estamos utilizando para adicionar o flex-direction*/
+    flex-direction: column; /*colocando os elementos em coluna um embaixo do outro*/
+    justify-content: space-between;/*espaçamento entre os elementos*/
+    margin-left: 30px;/*colocando um espaçamento  da esquerda*/
+}
+
+.description {
+    color: #ffffff;
+    font-size: 19px;/*tamanho do texto da descrição*/
+    width: 70%;/*largura*/
+}
+
+
+.button {
+    width: 200px;/*largura do botão*/
+    height: 60px;/*altura do botão*/
+    background-color: #d21617;/*cor do fundo*/
+    color: #ffffff;/*cor do texto*/
+    font-size: 18px;/*tamanho do texto*/
+    font-weight: bold;/*fazendo com que o texto dentro desses elementos seja exibido em negrito.*/
+    padding: 8px 10px;/*espaçamento interno cima e baixo, direita e esquerda */
+    border: none;/*tirando as bordas*/
+    border-radius: 7px;/*arredondando as bordas*/
+    cursor: pointer;/*mudando o ponteiro do mouse quando passar por cima*/
+    transition: .8s;/*efeito de mudança*/
+    display: flex;
+    justify-content: center;/*alinhando  o texto ao centro na horizontal*/
+    align-items: center;/*alinhando  o texto ao centro na vertical*/
+    margin-top: 25px;/*espaçamento  superior entre o texto e o botão*/
+    outline: none;/*tirando um linha de contorno do botão*/
+    /*
+A propriedade CSS outline é usada para criar uma linha ao redor
+ de um elemento HTML. É frequentemente 
+usada para destacar elementos selecionados ou para criar efeitos visuais.*/
+}
+
+/*pseudo classe é usada para
+estilizar um elemento quando o cursor do mouse está sobre ele*/
+
+.button:hover {
+    background-color: #ffffff;
+    color: #000000;
+}
+
+/*---------------Trailer Finalizado-----------*/
+
+/*-------Cards Atores-----------------------------*/
+
+.card {/*1°*/
+    width: 100%;
+    height: 600px;
+   
+    
+}
+
+/*2°*/
+.banner-1{
+    background-image: url('https://www.specfictionshop.com/cdn/shop/products/THE-batman_13_2000x.jpg?v=1651702557');
+}
+.banner-2 {
+    background-image: url('https://i.pinimg.com/736x/0a/a6/61/0aa66140c3d0bde86a8de619f1bf11da.jpg');
+
+}
+.banner-3 {
+    background-image: url('https://preview.redd.it/opinions-on-jeffrey-wrights-gordon-v0-l617izc155sb1.png?auto=webp&s=d86970095d58cf4443cf974ced11c68dd31e93bf');
+
+}
+
+/*3° */
+.cards-content{
+    width: 90%;/*largura*/
+    display: grid;/*utilizado antes para criar a coluna*/
+    grid-template-columns: repeat(3, 1fr);/*cria 3 colunas com mesmo espaçamento*/
+    column-gap: 40px;/*espaçamento entre as colunas*/
+
+}
+
+/*4°*/
+.card {
+    background-size: cover;/*imagem de fundo da div seja dimensionada para
+     cobrir toda a área da div, independentemente das dimensões da 
+     imagem original.*/
+     background-position: 50%  10%; /*posiciona o inicio do eixo x e y na metade superior esquerdo*/
+    border-radius: 5px;/*arredondar  os cantos dos cards*/
+    cursor: pointer; /* colocar mouse em cima da imagem cursor muda*/
+    transition: 1s;/*utilizando a transição para mudar tamanho da imagem no seletor .card:hover*/
+    display: flex;/*utilizando flex oara poder utilizar flex-direction e justify-content*/
+    flex-direction: column;/*deixando em coluna*/
+    justify-content: flex-end;/*o texto  vai estar no final da coluna*/
+    color: #ffffff;/*cor do texto*/
+    font-weight: bold;/*deixando o texto em negrito*/
+    font-size: 17px;/*tamanho da fonte do texto*/
+    /*sentido horário*/
+    /*cima - direita - baixo - esquerdo*/
+    padding: 0 0 20px 10px;
+    
+    
+}
+/*5°*/
+.texto {
+    position: absolute;/*tirando do mesmo fluxo e o texto fica na camada  acima*/
+    margin-bottom: 5px;/*coloca espaçamento embaixo*/
+    background-color: rgba(0, 0, 0, 0.6);/*cor de fundo com  opacidade*/
+    padding: 10px;/*aumenta o fundo em todos os lados*/
+    border-radius: 8px;/*arredonda  as bordas*/
+}
+/*6°*/
+.actor-cards-container{
+    width: 100%;/*deixando a div pai com 100%  da largura total*/
+    display: flex; /*utilizando  flexbox para organizar os elementos
+                  para pode utilizar justify-content :center*/
+    justify-content: center; /*deixando os elementos filhos centralizados*/
+    margin-top: 50px;/*espaçamento superior*/
+   margin-bottom: 30px;
+}
+/*7°*/
+/*aumentando as imagens dos cards  quando passado por cima*/
+.card:hover {
+    transform: scale(1.03);
+
+}
