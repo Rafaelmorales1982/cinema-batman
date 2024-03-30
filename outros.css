@@ -17,7 +17,8 @@ h1 {
 }
 
 .localizacao iframe {
-    
+    width: 600px;
+    height: 400px;
     border-radius: 15px;
     margin-top: 30px;
    
@@ -59,3 +60,12 @@ h1 {
     transform: scale(1.2);/*ao passar mouse a imagem  se torna maior*/
 }
 
+
+/*---responsividade---*/
+@media(max-width: 768px) {
+   
+    .localizacao iframe {
+        width: 95%
+       
+    }
+}
