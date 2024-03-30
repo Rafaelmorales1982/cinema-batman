@@ -24,3 +24,38 @@ h1 {
 }
 
 /*-----Finalizando  a página de Localização------*/
+
+/*---------Galeria de fotos---------------------*/
+
+.gallery-container {
+    display: flex;/*alinhando lado a lado*/
+    flex-wrap: wrap;/*Se os itens não couberem mais em uma linha, eles 
+    irão quebrar para a próxima linha, mantendo o layout flexível.*/
+    justify-content: space-evenly;/*para distribuir o espaço restante 
+    entre os itens flexíveis de maneira uniforme, incluindo espaços
+     iguais tanto entre os itens quanto nas extremidades do contêiner.*/
+    gap: 2vw;/*da espaçamento entre as linhas e colunas das imagens*/
+     margin-top: 30px;
+}
+
+.gallery-items {
+    width: 300px;/*largura*/
+    height: 250px;/*altura*/
+    border: 10px solid #ffffff;
+    flex-grow: 1;/*preenche espaço ao dimensionar a página*/
+   transition: 0.5s;/*transição efeito  quando passa por cima da img*/
+}
+
+.gallery-items img {
+    width: 100%;/*largura*/
+    height: 100%;/* Altura*/
+    object-fit: cover;/* deve ser dimensionado e posicionado 
+    dentro de seu contêiner, mantendo sua proporção original
+     e cobrindo todo o espaço disponível, sem distorções.*/
+
+}
+
+.gallery-items:hover{
+    transform: scale(1.2);/*ao passar mouse a imagem  se torna maior*/
+}
+
