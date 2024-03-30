@@ -1,13 +1,89 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="stylesheet" href="./outros.css">
     <title>Cinema Cineaston</title>
 </head>
+
 <body>
-    <h1>Cinema Cineaston</h1>
-    <p>Fotos</p>
-    
+
+    <!-- 1° -- Cabeçalho-->
+    <header>
+        <img id="logo" src="./img/fundos-do-batman.jpg" alt="Logo do Batman"/>
+        <!--Criando nossa navegação-->
+        <nav>
+            <!--Criando nossa lista não ordenada-->
+            <ul>
+                <a href="./index.html">
+                    <li>Home</li>
+                </a>
+
+                <a href="./contato.html">
+                    <li>Contato</li>
+                </a>
+
+                <a href="./fotos.html">
+                    <li>Fotos</li>
+                </a>
+
+                <a href="./localizacao.html">
+                    <li>Localização</li>
+                </a>
+
+            </ul>
+
+        </nav>
+    </header>
+<!-------------------------------------------------------------------------------->
+
+<!--------2°--Banner do Batman----------------------------------------------------->
+<div id="banner"></div>
+<!-------------------------------------------------------------------------------->
+<div class="fotos">
+    <h1>Fotos</h1>
+
+</div>
+
+<!--Footer -> rodapé -> colocamos (a logo nossa imagem),
+    (textos todos os direitos reservados),(por quem foi desenvolvido essa página)
+(vamos ter uma navegação quando for usar celular)-->
+
+<footer>
+    <!--seja redimensionada para caber completamente dentro do contêiner,
+     mantendo sua proporção original.-->
+    <img id="logo" style="object-fit: contain;" src="./img/logo-batman.png" alt=" Logo Batman">
+    <span class="footer-texto">Todos os direitos reservados © 2024</span>
+    <span class="footer-texto">Desenvolvido por: Rafael Morales de Lima</span>    
+
+    <!--Navegação dentro do foote para dispositivo móvel-->
+    <nav class="footer-navigation">
+        <!--Criando nossa lista não ordenada-->
+        <ul class="footer-list">
+            <a href="./index.html">
+                <li>Home</li>
+            </a>
+
+            <a href="./contato.html">
+                <li>Contato</li>
+            </a>
+
+            <a href="./fotos.html">
+                <li>Fotos</li>
+            </a>
+
+            <a href="./localizacao.html">
+                <li>Localização</li>
+            </a>
+
+        </ul>
+
+    </nav>
+</footer>
+
 </body>
+
 </html>
