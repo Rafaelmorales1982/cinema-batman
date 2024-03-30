@@ -5,7 +5,7 @@
 *{
     margin: 0;
     padding: 0;
-    background-color: black;/*Toda página cor preto*/
+  
     list-style: none;/*tira a o estilo da  lista por padrão (as bolinhas)*/
     text-decoration: none;/* Remove qualquer decoração do texto (link)
                              remove uma linha embaixo do texto */
@@ -13,6 +13,9 @@
 
 }
 
+body{
+    background-color: black;/*Toda página cor preto*/
+}
 /*----------------------------Parte 1 header------------------------------*/
 
 
@@ -324,3 +327,6 @@ footer {
     }
 
  }
+
+
+
