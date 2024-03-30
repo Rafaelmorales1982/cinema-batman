@@ -226,3 +226,101 @@ estilizar um elemento quando o cursor do mouse está sobre ele*/
     transform: scale(1.03);
 
 }
+
+/*-------------------Footer-------------------------*/
+
+footer {
+    height: 300px;/*altura*/
+    margin-top: 30px;/*espaçamento externo superior*/
+    display: flex;/*utilizando flex  para poder alinhar os elementos*/
+    flex-direction: column;/*colocando os elementos  em coluna*/
+    align-items: center;/*alinhando os elementos  no centro verticalmente*/
+    justify-content: center;/*alinhando os elementos   no centro horizontalmente*/
+
+}
+
+.footer-texto {
+    color: #ffffff;
+ 
+}
+
+/*display none para desaparecer a navegação e aparecer apenas
+ em dispositivos móveis*/
+ .footer-navigation{
+    display: none;/*para não aparecer na página normal*/
+ }
+
+ /*como ja foi utilizado display none footer-list não vai aparecer
+ mas temos que estilizar mesmo assim quando aparecer no disposivo
+ móvel*/
+
+ .footer-list {
+    display: flex;/*utilizando flex  para poder alinhar os elementos*/
+    flex-direction: column;/*colocando os elementos  em coluna*/
+    align-items: center;/*alinhando os elementos  no centro verticalmente*/
+
+ }
+
+ /*---------criando versão responsiva-------*/
+ @media(max-width:768px) {/*tela ter até 768px largura aplica essa regra abaixo*/
+    /*atribuir regras até 768px*/
+    .footer-navigation {
+        /*cria um bloco que ocupa todo espaço horizontal disponível*/
+        display: block;/*vai fazer aparecer a navegação pelo dispositivo*/
+    }
+
+    nav {
+        display: none;/*tirando a navegação do header */
+    }
+
+    #banner{
+      
+        background-position: 40%;
+    }
+
+    .trailer-container {
+        width: 100%;
+        height: 400px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .content {
+        width: 95%;/*largura*/
+        display: flex;/*utilizando para utilizar flex-direction*/
+        flex-direction: column;/*colocando elemento em coluna*/
+    }
+
+    .trailer {
+        width: 100%;
+    }
+
+    #sinopse {
+        width: 95%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;/*espacamento entre os elementos*/
+    }
+
+    .description {
+        width: 100%;
+    
+    }
+
+    .button{
+        width: 100%;
+        margin-top: 30px;
+        
+    }
+
+    .cards-content{
+        grid-template-columns: 1fr;/*colocando 1 coluna deixando os cards um embaixo do outro*/
+        margin-top: 100px;
+        
+    }
+
+    .card{
+        margin-bottom: 25px;
+    }
+
+ }
