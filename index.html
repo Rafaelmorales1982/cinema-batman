@@ -4,69 +4,120 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./style.css">
-    <title>Cinema Cinesenac - Batman</title>
+    <link rel="stylesheet" href="./styles.css">
+    <title>Cinema CineSenac</title>
 </head>
 
 <body>
 
-    <!--1° Cabeçalho-------------------------------->
+    <!-- 1° -- Cabeçalho-->
     <header>
-        <!--adicionando uma imagem-->
-        <!--nome da tag img é id="logo"-->
-        <img id="logo" src="./img/fundos-do-batman.jpg" alt="Logo Batman">
-        <!--Criando nossa  barra de navegação com as tags nav e lista com ul e li-->
+        <img id="logo" src="./img/fundos-do-batman.jpg" alt="Logo do Batman"/>
+        <!--Criando nossa navegação-->
         <nav>
-            <!--Criando nossa  lista com os links das páginas-->
+            <!--Criando nossa lista não ordenada-->
             <ul>
                 <a href="./index.html">
                     <li>Home</li>
                 </a>
-                <!--link 2---------------->
+
                 <a href="./contato.html">
                     <li>Contato</li>
                 </a>
-                <!--link3------->
+
                 <a href="./fotos.html">
                     <li>Fotos</li>
                 </a>
-                <!--link4------>
+
                 <a href="./localizacao.html">
                     <li>Localização</li>
                 </a>
+
             </ul>
 
         </nav>
-
     </header>
-<!----------------Cabeçalho finalizado--------------------------->
-<!--------------------------Iniciando banner---------------------------------------->
+<!-------------------------------------------------------------------------------->
+
+<!--------2°--Banner do Batman----------------------------------------------------->
 <div id="banner"></div>
+<!-------------------------------------------------------------------------------->
 
-    <!--------Parte Trailer---------------------------------->
-    <div id="trailer-container">
+<!-----3° trailer ----------->
+<div id="trailer-container">
 
-        <div class="content">
-            <video controls class="trailer" >
-                <source  src="./videos/The Batman - DC FanDome Teaser (1).mp4" type="video/mp4">
-                Seu navegador não possui suporte para vídeos.
-            </video>
-            <!--Div descrição do trailer-->
-            <div id="sinopse">
-                <p class="description">
-                    Após dois anos espreitando as ruas como Batman, Bruce Wayne se 
-                    encontra nas profundezas mais sombrias de Gotham City. Com 
-                    aliados confiáveis, o vigilante solitário 
-                    se estabelece como a personificação da vingança para a população.
-                </p>
-                   <!--Botão ir para página para comprar ingresso-->
+    <div class="content">
+        <video controls class="trailer">
+            <source src="./videos/The Batman - DC FanDome Teaser.mp4" type="video/mp4">
+            Seu navegador não possui suporte para vídeos
+        </video>
+         <!--Div descrição  do Trailer-->
+        <div id="sinopse"><!--relato breve do filme-->
+            <p class="description">
+                Após dois anos espreitando as ruas como Batman, Bruce Wayne se 
+                encontra nas profundezas mais sombrias de Gotham City. Com 
+                aliados confiáveis, o vigilante solitário 
+                se estabelece como a personificação da vingança para a população.
+            </p>
+            <!--Botão ir para página para comprar ingresso-->
             <button class="button">Comprar ingresso</button>
-            </div>
         </div>
-    </div>
-    <!--Parte do trailer finalizado---------------------------------------->
-    
 
+    </div>
+
+</div>
+<!-------------------------------------------------------------------------------->
+
+<!--Parte 4 cards dos atores-->
+<!--DIV principal  que engloba todos os card-->
+<div class="actor-cards-container">
+    <!--DIV dos cards-->
+    <div class="cards-content">
+        <!--Duas classes card -> reponsável para estilizar os cards-->
+        <!--classe banner responsável pela a imagem -->
+        <!--1° card    2° banner  3° cards-content  4°actor-cards-container -->
+        <div class="card banner-1 "><span class="texto">Robert Pattison - Batman</span></div>
+        <div class="card banner-2 "><span class="texto">Zoe Kravitz - Mulher gato</span></div>
+        <div class="card banner-3 "><span class="texto">Jeffrey Wright - Gordon</span></div>
+
+    </div>
+</div>
+
+<!--Footer -> rodapé -> colocamos (a logo nossa imagem),
+    (textos todos os direitos reservados),(por quem foi desenvolvido essa página)
+(vamos ter uma navegação quando for usar celular)-->
+
+<footer>
+    <!--seja redimensionada para caber completamente dentro do contêiner,
+     mantendo sua proporção original.-->
+    <img id="logo" style="object-fit: contain;" src="./img/logo-batman.png" alt=" Logo Batman">
+    <span class="footer-texto">Todos os direitos reservados © 2024</span>
+    <span class="footer-texto">Desenvolvido por: Rafael Morales de Lima</span>    
+
+    <!--Navegação dentro do foote para dispositivo móvel-->
+    <nav class="footer-navigation">
+        <!--Criando nossa lista não ordenada-->
+        <ul class="footer-list">
+            <a href="./index.html">
+                <li>Home</li>
+            </a>
+
+            <a href="./contato.html">
+                <li>Contato</li>
+            </a>
+
+            <a href="./fotos.html">
+                <li>Fotos</li>
+            </a>
+
+            <a href="./localizacao.html">
+                <li>Localização</li>
+            </a>
+
+        </ul>
+
+    </nav>
+</footer>
 
 </body>
 

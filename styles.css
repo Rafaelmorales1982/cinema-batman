@@ -73,7 +73,7 @@ li:hover {
     height: 400px;
     background-image: url('./img/banner1-batman.jpg');
     background-size: cover;
-    background-position: 50% 60%;
+    background-position: 50% 80%;
   
 
 }
@@ -94,7 +94,7 @@ li:hover {
     height: 400px;/*altura do container*/
     display: flex;/*serve para colocar os elemento lado a lado 
     mas nesse momento utilizado para alinhar o itens com justify-content*/
-    justify-content: center;/*alinhar os lementos ao centro*/
+    justify-content: center;/*alinhar os elementos ao centro*/
 
 }
 
