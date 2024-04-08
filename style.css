@@ -1,0 +1,100 @@
+/*Aqui é um link externo do google fonts*/
+@import url('https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&display=swap');
+*{
+    margin: 0;/*espaçamento externo*/
+    padding: 0;/*espaçamento interno*/
+    list-style: none;/*tira a o estilo da  lista por padrão (as bolinhas)*/
+    text-decoration: none;/* Remove qualquer decoração do texto (link)
+    remove uma linha embaixo do texto */
+    font-family: "Kdam Thmor Pro", sans-serif;/*fonte dos textos da página (@import)*/
+
+
+}
+
+body{
+    background-color: black;/*cor de fundo da página*/
+}
+
+/*--------------1° Estilizando o cabeçalho    header ------------------------*/
+/*pegando id do logo do batman*/
+#logo {
+    width: 150px; /*largura da imagem*/
+    height: auto;   /*para que a altura se adapte automaticamente à largura*/
+}
+
+header {
+height: 90px;
+display: flex;/*coloca a imagem e os elementos filhos lado a lado,ou seja,
+ serão organizados em uma linha horizontal*/
+ 
+justify-content: space-around;/*distribui os itens em espaço igual entre eles e
+ao redor de cada item*/
+align-items: center;/* alinha os itens verticalmente ao centro do container*/
+
+
+}
+
+nav {
+    width: 60% ;/*tamanho da área de navegação*/
+}
+
+ul {
+    display: flex;
+    width: 100% ;/*ocupa todo o espaço disponível na área de navegação*/
+    justify-content: space-between;/*espaçamento entre os itens*/
+
+}
+
+li{
+color: white ;/*cor do texto dos itens da lista */
+font-size: 19px ;/*tamanho do texto dos itens*/
+cursor: pointer;/*cria um cursor ao passar mouse*/
+transition: .5s;/*transição de cor*/
+}
+
+li:hover {
+    color: #d21617 ;/*muda a cor do texto passando com o mouse*/
+}
+/* --------Header finalizado------------------------------------------------------*/
+/*--------------------------------Iniciando banner---------------------------------*/
+#banner {
+    width: 100%;
+    height: 600px;
+  /*adiciona uma imagem interna ou externa*/
+    background-image: url("https://multiversomais.com/wp-content/uploads/2022/03/the-batman-3.jpg");
+    background-size: cover;/*deixa a imagem preencher todo o     container sem cortá-la*/
+     background-position: 50% 80%;
+   
+
+}
+
+/* -----------------Começando a seção do trailer ----------------*/
+.trailer {
+    width: 50%;
+}
+
+#trailer-container{
+    width: 100%;/*Largura*/
+    height: 400px;/*altura*/
+    display: flex;/*serve para colocar os elemento lado a lado 
+    mas nesse momento utilizado para alinhar o itens com justify-content*/
+    justify-content: center;/*alinhar os elementos ao centro*/
+}
+
+.content {
+    width: 60%;/*deixando o nosso container com total de 60%*/
+    display: flex;/*colocando os elementos lado a lado*/
+    align-items: center;/*ajusta verticalmente*/
+    justify-content: space-between;/*espaçamento entre os elementos*/
+}
+
+
+#sinopse {
+    width: 50%;
+    display: flex;/*nesse caso estamos utilizando para adicionar o
+     flex-direction*/
+    flex-direction: column; /*colocando os elementos em coluna um 
+    embaixo do outro*/
+    justify-content: space-between;/*espaçamento entre os elementos*/
+    margin-left: 30px;/*colocando um espaçamento  da esquerda*/
+}

@@ -1,2 +1,2 @@
-# cinema-batman
-Um site em apenas HTML e CSS propagando para vender ingressos do filme do Batman (Estudo)
+# senac-aula-cinema
+Desenvolvendo um site de propaganada para uma empresa fictícia Cinesenac - filme de cartas Batman 2022
